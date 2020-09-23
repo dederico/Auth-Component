@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authenticate - Component</title>
+<!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+  </head>
+<!-- Body -->
+  <body>
+<!-- Navigation Bar-->
+      <navbar class="nav-auth bg-primary text-light">
+          <h1 class="bg-primary text-light">NavBar</h1>
+        </navbar>
+
+<!--Landing Page Stuff-->
+        <section class="main-container container">
+            <h1>Que deseas hacer?</h1>
+        <div class="button-container">
+            <div class="col">
+            <h1><button class="btn-primary boton-adoptar">Adoptar</button></h1></div>
+            <div class="col">
+            <h1><button class="btn-primary">Comite de Adopciones</button></h1></div>
+        </div>
+        <br>
+<!--Main Container  / Authentication Module -->
+    <main class="auth-container container">Sign Up Form
+     
+          <div class="user-panel main"><br>E-mail<br><input id="email" name="login" placeholder="E-mail" type="email"></input></div><br>
+          
+          <div class="password-panel main">Password<br><input id="password" name="password" placeholder="Password" type="password"></input></div><br>
+<div class="button-auth">
+    <button onclick="auth
+      .createUserWithEmailAndPassword()") class="btn btn-primary">Authenticate</button>
+</div>
+<br>
+</main>
+<br>
+<!-- <aside>
+<div>
+<div>HOLA</div>
+</div>
+</aside> -->
+</section>
+<div class="footer bg-primary text-light">
+<footer>
+<h1>Footer</h1>
+</footer>
+</div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBPS-AQ5Sdm_agsNXiZ6_oDG9KWAH24p2Y",
+        authDomain: "authenticationcomponent-9bb2c.firebaseapp.com",
+        databaseURL: "https://authenticationcomponent-9bb2c.firebaseio.com",
+        projectId: "authenticationcomponent-9bb2c",
+        storageBucket: "authenticationcomponent-9bb2c.appspot.com",
+        messagingSenderId: "597885993328",
+        appId: "1:597885993328:web:ee4af1d98ff5fcf8324fb5",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth()
+    </script>
+    <script src="Auth.js"></script>
+  </body>
+</html>
